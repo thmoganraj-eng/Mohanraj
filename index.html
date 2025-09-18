@@ -1,0 +1,237 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Food Hotel — Digital Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <meta name="description" content="Digital portfolio for Food Hotel — menu, orders, contact" />
+
+</head>
+
+<body>
+
+  <header class="site-header">
+
+    <div class="brand">
+
+      <img src="assets/logo-placeholder.png" alt="Food Hotel logo" class="logo">
+
+      <h1>Food Hotel</h1>
+
+    </div>
+
+    <nav class="nav">
+
+      <a href="#about">About</a>
+
+      <a href="#menu">Menu</a>
+
+      <a href="#order">Order</a>
+
+      <a href="#contact">Contact</a>
+
+    </nav>
+
+  </header>
+
+  <section id="hero" class="hero">
+
+    <div class="hero-inner">
+
+      <h2>Welcome to Food Hotel</h2>
+
+      <p>A responsive digital portfolio showing menu, ordering & contact features.</p>
+
+      <a class="btn" href="#menu">View Menu</a>
+
+      <a class="btn ghost" href="#order">Place Order</a>
+
+    </div>
+
+    <div class="hero-image">
+
+      <img src="assets/food-hero.jpg" alt="Delicious food">
+
+    </div>
+
+  </section>
+
+  <section id="about" class="panel">
+
+    <h3>Project Overview</h3>
+
+    <p>
+
+      A responsive website for a Food Hotel. Provides menu details, simple order system
+
+      and contact info to enhance customer engagement.
+
+    </p>
+
+    <ul class="features">
+
+      <li>Online food menu with images & prices</li>
+
+      <li>Contact & booking form</li>
+
+      <li>WhatsApp quick contact</li>
+
+    </ul>
+
+  </section>
+
+  <section id="menu" class="panel cards">
+
+    <h3>Menu</h3>
+
+    <div class="card-grid" id="menuGrid">
+
+      <!-- JS will populate sample menu cards -->
+
+    </div>
+
+  </section>
+
+  <section id="order" class="panel order-panel">
+
+    <h3>Place an Order</h3>
+
+    <form id="orderForm" class="form">
+
+      <div class="row">
+
+        <label>
+
+          Name
+
+          <input type="text" name="name" required>
+
+        </label>
+
+        <label>
+
+          Phone
+
+          <input type="tel" name="phone" required>
+
+        </label>
+
+      </div>
+
+      <label>
+
+        Select Item
+
+        <select name="item" id="itemSelect" required></select>
+
+      </label>
+
+      <label>
+
+        Quantity
+
+        <input type="number" name="qty" min="1" value="1" required>
+
+      </label>
+
+      <label>
+
+        Notes (optional)
+
+        <textarea name="notes" rows="3"></textarea>
+
+      </label>
+
+      <div class="row">
+
+        <button type="submit" class="btn">Submit Order</button>
+
+        <button id="clearBtn" type="button" class="btn ghost">Clear</button>
+
+      </div>
+
+      <p class="form-note">This demo uses a mailto fallback — replace with real backend for production.</p>
+
+    </form>
+
+  </section>
+
+  <section id="contact" class="panel contact-panel">
+
+    <h3>Contact</h3>
+
+    <p>For bookings and quick questions use WhatsApp or the contact form below.</p>
+
+    <form id="contactForm" class="form small">
+
+      <label>
+
+        Name
+
+        <input name="cname" required>
+
+      </label>
+
+      <label>
+
+        Email
+
+        <input name="cemail" type="email" required>
+
+      </label>
+
+      <label>
+
+        Message
+
+        <textarea name="cmessage" rows="4" required></textarea>
+
+      </label>
+
+      <button type="submit" class="btn">Send Message</button>
+
+    </form>
+
+    <div class="contact-info">
+
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/917603958292" target="_blank" rel="noopener">+91 76039 59292</a></p>
+
+      <p><strong>College / Project:</strong> Shanmuga Industries Arts and Science College — Digital Portfolio Project.</p>
+
+    </div>
+
+  </section>
+
+  <footer class="site-footer">
+
+    <p>© Food Hotel — Digital Portfolio. Project by N. MOHANRAJ  (NMID & reg details in PPT).</p>
+
+    <p><a href="#" id="viewPPT">Open Project PPT</a></p>
+
+  </footer>
+
+  <!-- WhatsApp floating button -->
+
+  <a class="whatsapp-fab" href="https://wa.me/917603959292" target="_blank" rel="noopener" aria-label="WhatsApp">
+
+    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+
+      <path fill="currentColor" d="M20.5 3.5A11.9 11.9 0 0012 .5 11.94 11.94 0 001.5 12c0 2.1.55 4.09 1.59 5.86L.5 23.5l5.9-1.54A11.94 11.94 0 0012 24.5c6.6 0 12-5.4 12-12 0-3.2-1.25-6.16-3.5-8.5zM12 22.5c-1.7 0-3.35-.44-4.8-1.28l-.34-.2-3.5.93.94-3.42-.21-.34A9.5 9.5 0 012.5 12 9.5 9.5 0 0112 2.5 9.5 9.5 0 0121.5 12 9.5 9.5 0 0112 22.5z"/>
+
+    </svg>
+
+  </a>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
